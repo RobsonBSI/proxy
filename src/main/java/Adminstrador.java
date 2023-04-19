@@ -1,12 +1,12 @@
 public class Adminstrador  {
 
     private String nome;
-    private float salario;
+    private String cargo;
     private boolean administrador;
 
-    public Adminstrador(String nome, float salario, boolean administrador) {
+    public Adminstrador(String nome,String cargo, boolean administrador) {
         this.nome = nome;
-        this.salario=salario;
+        this.cargo= cargo;
         this.administrador = administrador;
     }
 
@@ -14,16 +14,8 @@ public class Adminstrador  {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public float getSalario() {
-        return salario;
-    }
-
-    public void setSalario(float salario) {
-        this.salario = salario;
+    public String getCargo() {
+        return cargo;
     }
 
     public boolean isAdministrador() {

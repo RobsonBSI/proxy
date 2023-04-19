@@ -40,7 +40,7 @@ public class Usuario implements Cliente{
 
     @Override
     public List<Float> obterNovoPedido(Adminstrador adminstrador) {
-        return (List<Float>) Arrays.asList(this.valorPedido);
+        return Arrays.asList(this.valorPedido);
     }
 
 
